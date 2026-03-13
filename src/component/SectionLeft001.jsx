@@ -21,7 +21,7 @@ const SectionLeft001 = ({
     </div>
 
     {/* Paragraph */}
-    <p className="Hero-FadeIn-l text-[var(--textlight2)] text-[0.6em]">{para}</p>
+    <p className="Hero-FadeIn-l text-[var(--textlight2)] text-[0.7em]">{para}</p>
 
     {/* Buttons */}
     <div className="flex gap-5 Hero-FadeIn-l">

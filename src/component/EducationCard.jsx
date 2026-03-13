@@ -1,20 +1,20 @@
 import React, { useState } from 'react';
 
-const EducationCard = ({ certificate }) => {
+const EducationCard = ({ certificateData }) => {
   const [showImage, setShowImage] = useState(false);
 
   return (
     <div
-      className="relative overflow-hidden transition-all duration-300 bg-white border-2 border-gray-200 shadow-md group hover:border-blue-500 w-80 rounded-xl hover:shadow-xl"
+      className="relative overflow-hidden transition-all duration-300 bg-white border-2 border-gray-200 shadow-md h-60 group hover:border-blue-500 w-80 rounded-xl hover:shadow-xl"
       onMouseEnter={() => setShowImage(true)}
       onMouseLeave={() => setShowImage(false)}
     >
       {/* Certificate Image Overlay - Shows on Hover */}
-      {showImage && certificate.imageUrl && (
+      {showImage && certificateData.imageUrl && (
         <div className="absolute inset-0 z-10 flex items-center justify-center p-4 transition-opacity duration-300 bg-black bg-opacity-95">
           <img
-            src={certificate.imageUrl}
-            alt={certificate.title}
+            src={certificateData.imageUrl}
+            alt={certificateData.title}
             className="object-contain max-w-full max-h-full rounded-lg shadow-2xl"
           />
         </div>
@@ -24,12 +24,12 @@ const EducationCard = ({ certificate }) => {
       <div className="p-6">
         {/* Certificate Title */}
         <h2 className="mb-2 text-2xl font-bold leading-snug text-gray-800">
-          {certificate.title}
+          {certificateData.title}
         </h2>
 
         {/* School Name */}
         <p className="mb-4 font-medium text-gray-600">
-          {certificate.school}
+          {certificateData.school}
         </p>
 
         {/* Divider */}
@@ -38,20 +38,19 @@ const EducationCard = ({ certificate }) => {
         {/* Date and Status Row */}
         <div className="flex items-center justify-between">
           <div className="text-sm text-gray-600">
-            <span className="font-semibold">{certificate.date}</span>
+            <span className="font-semibold">{certificateData.date}</span>
           </div>
-          
+
           {/* Status Badge */}
           <span
-            className={`px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide ${
-              certificate.status.toLowerCase() === 'completed'
-                ? 'bg-green-500 text-white'
-                : certificate.status.toLowerCase() === 'in progress'
+            className={`px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide ${certificateData.status.toLowerCase() === 'completed'
+              ? 'bg-green-500 text-white'
+              : certificateData.status.toLowerCase() === 'in progress'
                 ? 'bg-blue-500 text-white'
                 : 'bg-gray-500 text-white'
-            }`}
+              }`}
           >
-            {certificate.status}
+            {certificateData.status}
           </span>
         </div>
 
@@ -64,41 +63,5 @@ const EducationCard = ({ certificate }) => {
   );
 };
 
-// Example Usage Component
-const EducationSection = () => {
-  const certificateData = [
-    {
-      title: "Full Stack Web Development",
-      school: "ABC University",
-      date: "Jan 2023 - Dec 2023",
-      status: "Completed",
-      imageUrl: "https://png.pngtree.com/template/20250203/ourmid/pngtree-red-graduation-certificate-template-vector-image_2039176.jpg"
-    },
-    {
-      title: "Advanced React & TypeScript",
-      school: "XYZ Academy",
-      date: "Mar 2024 - Present",
-      status: "In Progress",
-      imageUrl: "/path/to/certificate2.jpg"
-    },
-    {
-      title: "Node.js Masterclass",
-      school: "Tech Institute",
-      date: "Jun 2023 - Aug 2023",
-      status: "Completed",
-      imageUrl: "/path/to/certificate3.jpg"
-    }
-  ];
 
-  return (
-    <div className="w-full min-h-screen p-5 bg-gray-50">
-      <div className="flex flex-wrap justify-center gap-6">
-        {certificateData.map((cert, idx) => (
-          <EducationCard key={idx} certificate={cert} />
-        ))}
-      </div>
-    </div>
-  );
-};
-
-export default EducationSection;
+export default EducationCard;
