@@ -65,44 +65,50 @@ const DataProvider = ({ children }) => {
 
   const serviceData = [
     {
-      name: "WordPress Customization",
-      para: "Professional WordPress setup, theme customization, and optimization to create visually appealing and functional websites tailored to your brand.",
+      name: "WordPress Development",
+      para: "Custom WordPress websites built to match your brand, business goals, and performance requirements. I develop tailored themes, customize existing themes, and integrate tools such as Elementor, Gutenberg, and WooCommerce. Each website is optimized for speed, SEO, security, and scalability while maintaining a clean and user friendly design.",
       img: "/serviceIcons/wordpress.webp",
+      logo: "wordpress",
       top: "10vh",
       type: "red",
     },
     {
-      name: "SEO & Digital Marketing",
-      para: "Helping brands improve search rankings, increase visibility, and engage the right audiences through strategic SEO and digital marketing solutions.",
+      name: "SEO Optimization",
+      para: "Technical and on page SEO improvements designed to increase search visibility and drive organic traffic. This includes website structure optimization, metadata setup, keyword focused content structure, image optimization, and performance improvements that help websites rank better on search engines.",
       img: "/serviceIcons/seo and marketing.webp",
+      logo: "search",
       top: "15vh",
       type: "black",
     },
     {
-      name: "Graphic Design",
-      para: "Crafting creative visuals, branding elements, and design assets that capture attention and communicate your brand story.",
+      name: "UI / Graphic Design",
+      para: "Professional visual design that enhances brand identity and user engagement. I create website graphics, social media assets, thumbnails, and branding elements that maintain visual consistency across platforms while delivering a modern and polished appearance.",
       img: "/serviceIcons/graphic design.webp",
+      logo: "palette",
       top: "20vh",
       type: "red",
     },
     {
       name: "Website Development",
-      para: "Developing responsive, fast, and user-friendly websites that deliver seamless experiences across devices.",
+      para: "Responsive and high performance websites developed using modern web technologies. Each project focuses on fast loading speed, accessibility, clean code structure, and smooth user experience across desktop, tablet, and mobile devices.",
       img: "/serviceIcons/web development.webp",
+      logo: "code",
       top: "25vh",
       type: "black",
     },
     {
-      name: "Web App Development",
-      para: "End-to-end website creation—from planning and design to deployment—ensuring performance, scalability, and usability.",
+      name: "Web Application Development",
+      para: "Full stack web applications built with modern frameworks such as React, Node.js, Express, and MongoDB. I develop scalable and efficient applications with secure APIs, dynamic interfaces, and optimized backend logic that supports real business workflows and complex functionality.",
       img: "/serviceIcons/web app development.webp",
+      logo: "layers",
       top: "30vh",
       type: "red",
     },
     {
-      name: "Troubleshooting",
-      para: "Providing expert troubleshooting, maintenance, and support to keep your website running smoothly and efficiently.",
+      name: "Website Maintenance & Troubleshooting",
+      para: "Ongoing website maintenance, bug fixing, and performance monitoring to keep websites secure and running smoothly. This includes fixing technical issues, improving speed, updating plugins and systems, and ensuring long term stability and reliability.",
       img: "/serviceIcons/troubleshoot.webp",
+      logo: "wrench",
       top: "35vh",
       type: "black",
     },
@@ -117,7 +123,7 @@ const DataProvider = ({ children }) => {
         "Developed a classic Snake game using HTML, CSS, and JavaScript, focusing on interactive gameplay, responsive design, and smooth user experience.",
       gitlink: "https://github.com/Muhammad-Yousuf-k/SnakeGame",
       projlink: "https://muhammad-yousuf-k.github.io/SnakeGame/",
-      ProjStack: ["HTML", "CSS", "JS"],
+      ProjStack: "vanila stack",
     },
     {
       img: "/aboutSec/about.webp",
@@ -127,7 +133,7 @@ const DataProvider = ({ children }) => {
         "Developed a classic Tik Tak Toc game using HTML, CSS, and JavaScript, focusing on interactive gameplay, responsive design, and smooth user experience.",
       gitlink: "https://github.com/Muhammad-Yousuf-k/Tik-Tak-Toc",
       projlink: "https://muhammad-yousuf-k.github.io/Tik-Tak-Toc/",
-      ProjStack: ["HTML", "CSS", "JS"],
+      ProjStack: "vanila stack",
     },
     {
       img: "/aboutSec/about.webp",
@@ -137,7 +143,7 @@ const DataProvider = ({ children }) => {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem amet sunt non vero temporibus molestias.",
       gitlink: "https://github.com/Muhammad-Yousuf-k/Yousuf-Portfolio",
       projlink: "https://muhammad-yousuf-k.github.io/Yousuf-Portfolio/",
-      ProjStack: ["HTML", "CSS", "JS"],
+      ProjStack: "React",
     },
     {
       img: "/aboutSec/about.webp",
@@ -149,7 +155,7 @@ const DataProvider = ({ children }) => {
         "https://github.com/Muhammad-Yousuf-k/image_compressing-tool-react",
       projlink:
         "https://muhammad-yousuf-k.github.io/image_compressing-tool-react/",
-      ProjStack: ["MongoDB", "Express", "React", "Node"],
+      ProjStack: "Mern Stack",
     },
     {
       img: "/aboutSec/about.webp",
@@ -159,7 +165,7 @@ const DataProvider = ({ children }) => {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem amet sunt non vero temporibus molestias.",
       gitlink: "https://github.com/Muhammad-Yousuf-k/ExpensePro",
       projlink: "none",
-      ProjStack: ["MongoDB", "Express", "Ejs", "Node"],
+      ProjStack: "Ejs and NodeJS",
     },
   ];
   const certificateData = [
@@ -311,21 +317,21 @@ const DataProvider = ({ children }) => {
       title: "Leads Scrapping and Support",
       companyName: "OMY Digital",
       date: "Nov 2024 to Apr 2025",
-      description: "Developed responsive WordPress websites using Elementor and custom themes. Improved site speed, SEO structure, and implemented client-specific features.",
+      description: "I support digital growth at OMY Digital through lead generation, SEO content creation, and WordPress website management. I research high quality leads from platforms such as Bark and across the web, create SEO optimized blog content, design thumbnails and social media posts, and assist with maintaining and updating WordPress websites.",
     },
     {
       logo: "experiencesImages/omy_digital_logo.jpg",
       title: "Wordpress Developer",
       companyName: "OMY Digital",
       date: "Apr 2025 to Feb 2026",
-      description: "Built full stack applications using React, Node.js, Express, and MongoDB. Created REST APIs and implemented secure authentication systems.",
+      description: "Designed and developed high performance WordPress websites with custom themes and modern tools such as Elementor and WooCommerce. Focused on responsive design, SEO optimization, and website performance. Delivered end to end solutions including development, optimization, integrations, and ongoing site maintenance to support business growth.",
     },
     {
       logo: "experiencesImages/devritech_logo.jpg",
       title: "Wordpress Developer",
       companyName: "Devritech Pvt Limited",
       date: "Mar 2026 to Present",
-      description: "Developing modern web applications and business tools including a Lead CRM system with employee management and automated lead assignment.",
+      description: "Developed high performance WordPress websites and full stack web solutions, including WooCommerce stores, headless WordPress implementations, and custom Gutenberg blocks. Focused on performance optimization, responsive design, and scalable architecture using PHP, JavaScript, and Tailwind CSS. Integrated APIs and modern workflows to build maintainable, SEO optimized web applications while collaborating on UX and UI design systems to deliver user focused digital experiences.",
     },
   ];
 

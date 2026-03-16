@@ -45,7 +45,7 @@ const TestimonialSection = () => {
   return (
     <div
       id="testimonial"
-      className="relative w-full py-12 overflow-hidden md:py-20 bg-gradient-to-br from-gray-50 via-white to-gray-100"
+      className="relative w-full py-12 overflow-hidden bg-[var(--light)] md:py-20"
     >
       {/* Decorative background elements */}
       <div className="absolute top-0 left-0 w-48 h-48 -translate-x-1/2 -translate-y-1/2 bg-blue-100 rounded-full md:w-72 md:h-72 filter blur-3xl opacity-20"></div>

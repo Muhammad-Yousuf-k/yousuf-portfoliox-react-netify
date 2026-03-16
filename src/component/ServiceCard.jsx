@@ -1,5 +1,5 @@
 import React from "react";
-import { Code, Palette, Server, Globe, Smartphone, Database } from "lucide-react";
+import { Code, Palette, Server, Globe, Smartphone, Database, Search, Wrench, Layers, Computer } from "lucide-react";
 
 // Icon mapping object
 const iconMap = {
@@ -9,10 +9,14 @@ const iconMap = {
   globe: Globe,
   smartphone: Smartphone,
   database: Database,
+  search: Search,
+  wrench: Wrench,
+  layers: Layers,
+  wordpress: Computer, // WordPress uses Code icon as fallback
 };
 
 const ServiceCard = ({ data }) => {
-  const IconComponent = iconMap[data.icon] || Code;
+  const IconComponent = iconMap[data.logo] || Code;
 
   return (
     <div
