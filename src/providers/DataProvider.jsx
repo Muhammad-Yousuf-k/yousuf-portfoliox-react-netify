@@ -170,25 +170,36 @@ const DataProvider = ({ children }) => {
   ];
   const certificateData = [
     {
+      status: "Completed",
       imageUrl: "https://png.pngtree.com/template/20250203/ourmid/pngtree-red-graduation-certificate-template-vector-image_2039176.jpg",
       title: "Matrix",
-      status: "Completed",
       instituteName: "Capital Institute",
-      date: "2022",
+      date: "2022 to 2024",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem amet sunt non vero temporibus molestias.",
     },
     {
-      imageUrl: "",
-      title: "Matrix",
-      status: "Completed",
+      imageUrl: "https://png.pngtree.com/template/20250203/ourmid/pngtree-red-graduation-certificate-template-vector-image_2039176.jpg",
+      title: "D.A.E in (SE)",
+      status: "in progress",
       instituteName: "Capital Institute",
-      date: "2022",
+      date: "2024 to 2026",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem amet sunt non vero temporibus molestias.",
     },
     {
-      imageUrl: "",
-      title: "Matrix",
+      imageUrl: "https://png.pngtree.com/template/20250203/ourmid/pngtree-red-graduation-certificate-template-vector-image_2039176.jpg",
+      title: "Web Development",
       status: "Completed",
-      instituteName: "Capital Institute",
-      date: "2022",
+      instituteName: "Visionary Institute",
+      date: "2023 to 2023",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem amet sunt non vero temporibus molestias.",
+    },
+    {
+      imageUrl: "https://png.pngtree.com/template/20250203/ourmid/pngtree-red-graduation-certificate-template-vector-image_2039176.jpg",
+      title: "Graphic Design",
+      status: "Completed",
+      instituteName: "Visionary Institute",
+      date: "2023 to 2023",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem amet sunt non vero temporibus molestias.",
     },
 
   ];
@@ -246,16 +257,24 @@ const DataProvider = ({ children }) => {
   ];
   const techStackOtherData = [
     {
+      name: "PhotoShop",
+      logo: "M512.5 74.3L291.1 222C262 241.4 243.5 272.9 240.5 307.3C302.8 320.1 351.9 369.2 364.8 431.6C399.3 428.6 430.7 410.1 450.1 381L597.7 159.5C604.4 149.4 608 137.6 608 125.4C608 91.5 580.5 64 546.6 64C534.5 64 522.6 67.6 512.5 74.3zM320 464C320 402.1 269.9 352 208 352C146.1 352 96 402.1 96 464C96 467.9 96.2 471.8 96.6 475.6C98.4 493.1 86.4 512 68.8 512L64 512C46.3 512 32 526.3 32 544C32 561.7 46.3 576 64 576L208 576C269.9 576 320 525.9 320 464z",
+      level: "Expert",
+      prograss: "90%",
+    },
+  ];
+  const techStackCMSData = [
+    {
       name: "Wordpress",
       logo: "M125.7 233.4L227.2 511.4C156.2 477 107.3 404.2 107.3 320C107.3 289.1 113.9 259.9 125.7 233.4zM463.6 309.3C463.6 283 454.2 264.8 446.1 250.6C435.3 233.1 425.2 218.2 425.2 200.7C425.2 181.1 440 162.9 460.9 162.9C461.8 162.9 462.7 163 463.7 163.1C425.8 128.4 375.4 107.2 320 107.2C245.7 107.2 180.3 145.3 142.2 203.1C147.2 203.3 151.9 203.4 155.9 203.4C178.1 203.4 212.6 200.7 212.6 200.7C224.1 200 225.4 216.9 214 218.2C214 218.2 202.5 219.5 189.7 220.2L267.2 450.6L313.8 311L280.7 220.2C269.2 219.5 258.4 218.2 258.4 218.2C246.9 217.5 248.3 200 259.7 200.7C259.7 200.7 294.8 203.4 315.7 203.4C337.9 203.4 372.4 200.7 372.4 200.7C383.9 200 385.2 216.9 373.8 218.2C373.8 218.2 362.3 219.5 349.5 220.2L426.4 448.9L447.6 378C456.6 348.6 463.6 327.5 463.6 309.3zM323.7 338.6L259.9 524.1C279 529.7 299.1 532.8 320 532.8C344.8 532.8 368.5 528.5 390.6 520.7C390 519.8 389.5 518.8 389.1 517.8L323.7 338.6zM506.7 217.9C507.6 224.7 508.1 231.9 508.1 239.8C508.1 261.4 504.1 285.6 491.9 316L426.9 503.9C490.2 467 532.7 398.5 532.7 320C532.7 283 523.3 248.2 506.7 217.9zM72 320C72 183 183 72 320 72C457 72 568 183 568 320C568 457 457 568 320 568C183 568 72 457 72 320zM556.6 320C556.6 189.3 450.7 83.4 320 83.4C189.3 83.4 83.4 189.3 83.4 320C83.4 450.7 189.3 556.6 320 556.6C450.7 556.6 556.6 450.7 556.6 320z",
       level: "Expert",
       prograss: "90%",
     },
     {
-      name: "PhotoShop",
-      logo: "M512.5 74.3L291.1 222C262 241.4 243.5 272.9 240.5 307.3C302.8 320.1 351.9 369.2 364.8 431.6C399.3 428.6 430.7 410.1 450.1 381L597.7 159.5C604.4 149.4 608 137.6 608 125.4C608 91.5 580.5 64 546.6 64C534.5 64 522.6 67.6 512.5 74.3zM320 464C320 402.1 269.9 352 208 352C146.1 352 96 402.1 96 464C96 467.9 96.2 471.8 96.6 475.6C98.4 493.1 86.4 512 68.8 512L64 512C46.3 512 32 526.3 32 544C32 561.7 46.3 576 64 576L208 576C269.9 576 320 525.9 320 464z",
-      level: "Expert",
-      prograss: "90%",
+      name: "Shopify",
+      logo: "M484.5 168.1C484.3 167 483.8 166 483 165.3C482.2 164.6 481.2 164.1 480.1 164.1C478.1 164.1 442.9 163.3 442.9 163.3C442.9 163.3 421.3 142.5 413.3 134.5L413.3 567.2L539 536C539 536 485 170.5 484.6 168.1zM384.9 134.5C383 128.4 380.6 122.6 377.7 116.9C367.3 96.9 351.7 86 333.3 86C332 86 330.6 86.1 329.3 86.4C328.9 85.6 328.1 85.2 327.7 84.4C319.7 75.6 309.3 71.6 296.9 72C272.9 72.8 248.9 90 229.7 120.8C216.1 142.4 205.7 169.6 202.9 190.9C175.3 199.3 156.1 205.3 155.7 205.7C141.7 210.1 141.3 210.5 139.7 223.7C138.5 233.7 101.7 515.5 101.7 515.5L404.3 568L404.3 129.7C402.8 129.8 401.4 129.9 399.9 130.1C399.9 130.1 394.3 131.7 385.1 134.5zM329.6 151.7C313.6 156.5 296 162.1 278.8 167.3C283.6 148.5 293.2 129.7 304.4 117.3C308.8 112.9 314.8 107.7 321.6 104.5C328.4 118.9 330 138.5 329.6 151.7zM296.8 88.4C301.8 88.2 306.8 89.5 311.2 92C304.8 95.2 298.4 100.4 292.4 106.4C277.2 122.8 265.6 148.4 260.8 172.9C246.4 177.3 232 181.7 218.8 185.7C227.6 147.3 260 89.3 296.8 88.5zM250.4 308.6C252 334.2 319.6 339.8 323.6 400.3C326.4 447.9 298.4 480.4 258 482.8C209.2 486 182.4 457.2 182.4 457.2L192.8 413.2C192.8 413.2 219.6 433.6 241.2 432C255.2 431.2 260.4 419.6 260 411.6C258 378 202.8 380 199.2 324.7C196 278.3 226.4 231.4 293.7 227C319.7 225.4 332.9 231.8 332.9 231.8L317.7 289.4C317.7 289.4 300.5 281.4 280.1 283C250.5 285 250.1 303.8 250.5 308.6zM345.6 146.9C345.6 134.9 344 117.7 338.4 103.3C356.8 106.9 365.6 127.3 369.6 139.7C362.4 141.7 354.4 144.1 345.6 146.9z",
+      level: "Just Start",
+      prograss: "10%",
     },
   ];
 
@@ -350,6 +369,7 @@ const DataProvider = ({ children }) => {
         testimonialsData,
         experiencesData,
         contactIcons,
+        techStackCMSData
       }}
     >
       {children}

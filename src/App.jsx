@@ -1,6 +1,6 @@
 import { Suspense, lazy } from "react";
 import Navbar from "./component/Navbar";
-
+import SkeletonScreen from './component/SkeletonScreen';
 // Lazy load all sections
 const HeroSection = lazy(() => import("./sections/HeroSection"));
 const AboutSection = lazy(() => import("./sections/AboutSection"));
@@ -15,28 +15,28 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <Suspense fallback={<div>Loading Hero...</div>}>
+      <Suspense fallback={<SkeletonScreen />}>
         <HeroSection />
       </Suspense>
-      <Suspense fallback={<div>Loading About...</div>}>
+      <Suspense fallback={<SkeletonScreen />}>
         <AboutSection />
       </Suspense>
-      <Suspense fallback={<div>Loading Experience...</div>}>
+      <Suspense fallback={<SkeletonScreen />}>
         <ExperienceSection />
       </Suspense>
-      <Suspense fallback={<div>Loading Services...</div>}>
+      <Suspense fallback={<SkeletonScreen />}>
         <ServiceSection />
       </Suspense>
-      <Suspense fallback={<div>Loading Showcase...</div>}>
+      <Suspense fallback={<SkeletonScreen />}>
         <ShowCaseSection />
       </Suspense>
-      <Suspense fallback={<div>Loading Testimonials...</div>}>
+      <Suspense fallback={<SkeletonScreen />}>
         <TestimonialSection />
       </Suspense>
-      <Suspense fallback={<div>Loading Contact...</div>}>
+      <Suspense fallback={<SkeletonScreen />}>
         <ContactSection />
       </Suspense>
-      <Suspense fallback={<div>Loading Footer...</div>}>
+      <Suspense fallback={<SkeletonScreen />}>
         <FooterSection />
       </Suspense>
     </>

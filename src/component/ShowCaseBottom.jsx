@@ -10,10 +10,12 @@ const ShowCaseBottom = ({
   techStackFrontendData,
   techStackBackendData,
   techStackOtherData,
+  techStackCMSData,
 }) => {
   const techStacks = [
     { title: "Frontend", data: techStackFrontendData },
     { title: "Backend", data: techStackBackendData },
+    { title: "CMS", data: techStackCMSData },
     { title: "Other", data: techStackOtherData },
   ];
 

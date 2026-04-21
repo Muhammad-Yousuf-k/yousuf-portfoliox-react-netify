@@ -10,6 +10,7 @@ const ShowCaseSection = () => {
     techStackFrontendData,
     techStackBackendData,
     techStackOtherData,
+    techStackCMSData,
   } = useData();
 
   const [currentView, setCurrentView] = useState("project");
@@ -47,6 +48,7 @@ const ShowCaseSection = () => {
         techStackFrontendData={techStackFrontendData}
         techStackBackendData={techStackBackendData}
         techStackOtherData={techStackOtherData}
+        techStackCMSData={techStackCMSData}
       />
     </div>
   );

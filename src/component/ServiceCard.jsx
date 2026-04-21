@@ -24,7 +24,7 @@ const ServiceCard = ({ data }) => {
       className="group w-[90%] md:w-[60%] lg:w-[40%] min-h-[350px] shadow-2xl border border-gray-200 bg-white flex flex-col rounded-2xl sticky overflow-hidden transition-all duration-300 hover:shadow-3xl hover:border-gray-300 hover:-translate-y-1 p-6"
     >
       <div className="flex items-start justify-start w-full mb-4 gap-x-4">
-        <div className="p-3 transition-colors duration-300 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl group-hover:from-blue-100 group-hover:to-indigo-100">
+        <div className=" serviceCardLogo p-3 transition-colors duration-300 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl group-hover:from-blue-100 group-hover:to-indigo-100">
           <IconComponent
             className="w-10 h-10 text-indigo-600 transition-transform duration-300 group-hover:scale-110"
             strokeWidth={1.5}
